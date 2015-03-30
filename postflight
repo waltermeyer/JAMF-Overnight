@@ -5,8 +5,7 @@
 IS_LAPTOP=`/usr/sbin/system_profiler SPHardwareDataType | grep "Model Name" | grep "Book"`
 if [ "$IS_LAPTOP" != "" ]; then
 
-	sudo pmset repeat wakeorpoweron MTWRF 02:00:00
-	sudo pmset repeat shutdown MTWRFSU 22:00:00
+	sudo pmset repeat wakeorpoweron MTWRF 02:00:00 shutdown MTWRFSU 22:00:00
 	
 fi
 
