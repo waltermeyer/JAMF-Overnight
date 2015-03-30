@@ -21,7 +21,7 @@
 
 include /usr/local/share/luggage/luggage.make
 
-TITLE=RCS_overnightMunki
+TITLE=overnightMunki
 REVERSE_DOMAIN=com.example
 PAYLOAD=pack-overnightMunki.sh \
 	pack-Library-LaunchDaemons-com.example.overnightMunki.plist \
