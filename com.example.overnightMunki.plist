@@ -6,7 +6,9 @@
 	<string>com.example.overnightMunki</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/etc/hooks/overnightMunki.sh</string>
+		<string>/usr/bin/caffeinate</string>
+		<string>-is</string>
+		<string>/usr/local/etc/overnightMunki.sh</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
