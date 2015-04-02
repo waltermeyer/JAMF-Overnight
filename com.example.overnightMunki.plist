@@ -8,7 +8,7 @@
 	<array>
 		<string>/usr/bin/caffeinate</string>
 		<string>-is</string>
-		<string>/usr/local/etc/overnightMunki.sh</string>
+		<string>/etc/hooks/overnightMunki.sh</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
