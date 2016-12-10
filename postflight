@@ -2,11 +2,11 @@
 
 # Set Laptop Wake Time to 2am
 #If the machine is a laptop, do some laptop-specific things
-IS_LAPTOP=`/usr/sbin/system_profiler SPHardwareDataType | grep "Model Name" | grep "Book"`
+IS_LAPTOP=`/usr/sbin/system_profiler SPHardwareDataType | grep "Model Name"`
 if [ "$IS_LAPTOP" != "" ]; then
 	
 	#set poweron at 2am and shutdown at 8pm
-	sudo pmset repeat wakeorpoweron MTWRF 02:00:00 shutdown MTWRFSU 20:00:00
+	sudo pmset repeat wakeorpoweron MTWRF 02:00:00
 	
 fi
 

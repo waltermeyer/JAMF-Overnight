@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.example.overnightMunki</string>
+	<string>edu.columbia.theschool.overnightJSS</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/usr/bin/caffeinate</string>

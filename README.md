@@ -7,8 +7,5 @@ closed also but wirelessly. in this repo are the files I use to make the install
 
 Uses caffeinate command, pmset, and a launchd and JAMF <https://www.jamf.com>. with pmset the laptops will only turn on at the specified time if there is a power source or whenever a power source gets connected after that so it works with our carts just fine.
 
-After pkg is built, import into JSS and push out the policy. 
-
-seems to work pretty well in my environment.
-
+After pkg is built, import into JSS and push out the policy.
 
