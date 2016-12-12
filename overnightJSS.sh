@@ -4,18 +4,16 @@
 SystemHour=$(date "+%H")
 
 #hour of time we have set computers to turn on (HH) done this way so it'll only run within that hour
-TurnOnTime=16
+TurnOnTime=02
 
 if [ "$SystemHour" = "$TurnOnTime" ] ; then
 	
 		#check software
 		if SPSoftwareDataType=$(system_profiler SPSoftwareDataType | grep "10.12") ; then
-			echo "10.12"
 			#check system battery 
 			battPercentage=$(pmset -g batt | grep "InternalBattery" | cut -c 34-35) # this is for Sierra
 		fi
 		if SPSoftwareDataType=$(system_profiler SPSoftwareDataType | grep "10.11") ; then
-			echo "10.11"
 			battPercentage=$(pmset -g batt | grep "InternalBattery" | cut -c 22-23) # this is for El Capitan
 		fi
 		if [ "$battPercentage" -gt 35 ] ; then
