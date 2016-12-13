@@ -6,7 +6,7 @@ IS_LAPTOP=`/usr/sbin/system_profiler SPHardwareDataType | grep "Model Name"`
 if [ "$IS_LAPTOP" != "" ]; then
 	
 	#set poweron at 2am and sleep at 7am
-	sudo pmset repeat wakeorpoweron MTWRF 02:00:00 sleep MTWRF 07:00:00
+	sudo pmset repeat wakeorpoweron MTWRF 02:00:00
 	
 fi
 
